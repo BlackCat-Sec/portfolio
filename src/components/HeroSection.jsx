@@ -1,13 +1,12 @@
-import { motion } from "framer-motion";
 import {
   ArrowRight,
   BriefcaseBusiness,
   FolderGit2,
   MapPin,
   ShieldCheck,
-  Sparkles,
 } from "lucide-react";
 import { portfolio } from "../data/portfolioData";
+import InteractiveThreatPanel from "./InteractiveThreatPanel";
 import Reveal from "./Reveal";
 import StatusPanel from "./StatusPanel";
 import TerminalPanel from "./TerminalPanel";
@@ -107,30 +106,7 @@ function HeroSection() {
         </Reveal>
 
         <Reveal delay={0.12} className="flex flex-col gap-5">
-          <div className="glass-card relative flex min-h-[20rem] items-center justify-center overflow-hidden rounded-[32px] p-6">
-            <motion.div
-              className="absolute inset-6 rounded-full bg-cyan-500/10 blur-3xl"
-              animate={{ scale: [1, 1.08, 1], opacity: [0.35, 0.55, 0.35] }}
-              transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-            />
-            <div className="cyber-orb">
-              <div className="orb-grid" />
-              <div className="orb-ring" />
-              <div className="orb-ring orb-ring-delay" />
-              <span className="orb-node top-[16%] left-[62%]" />
-              <span className="orb-node top-[42%] left-[18%]" />
-              <span className="orb-node top-[68%] left-[74%]" />
-              <span className="orb-node top-[28%] left-[32%]" />
-            </div>
-
-            <div className="absolute left-5 top-5 rounded-full border border-violet-400/20 bg-violet-400/10 px-3 py-1 text-xs text-violet-200">
-              Secure Systems
-            </div>
-            <div className="absolute bottom-5 right-5 flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200">
-              <Sparkles size={14} />
-              Intelligent Builds
-            </div>
-          </div>
+          <InteractiveThreatPanel />
 
           <StatusPanel items={portfolio.focusAreas} />
         </Reveal>

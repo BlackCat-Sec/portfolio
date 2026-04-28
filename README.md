@@ -1,6 +1,6 @@
 # Mokshith H S Portfolio
 
-Premium cybersecurity + AI/ML personal portfolio built with React, Vite, Tailwind CSS, Framer Motion, and Lucide React. The design is optimized for GitHub Pages and structured so private projects can still be presented professionally with editable placeholder cards.
+Premium cybersecurity + AI/ML personal portfolio built with React, Vite, Tailwind CSS, Framer Motion, and Lucide React. The design is optimized for GitHub Pages and structured so private projects can still be presented professionally with editable project cards.
 
 ## Features
 
@@ -8,7 +8,7 @@ Premium cybersecurity + AI/ML personal portfolio built with React, Vite, Tailwin
 - Responsive layout for mobile, tablet, and desktop
 - Reusable React components with content driven from `src/data/portfolioData.js`
 - Featured project cards that support `Private`, `In Progress`, and `Public` states without broken links
-- SEO meta tags, Open Graph placeholder image, custom 404 page, and downloadable resume placeholder
+- SEO meta tags, Open Graph social preview image, custom 404 page, and a ready-to-replace resume download slot
 - GitHub Actions workflow for automatic GitHub Pages deployment
 
 ## Stack
@@ -68,7 +68,7 @@ The main content lives in `src/data/portfolioData.js`.
 Update these areas first:
 
 - Personal details, project descriptions, and social links
-- Private project CTA placeholders
+- Private project entries and CTA labels
 - Skills, certifications, and achievements
 - Resume file reference under `portfolio.resume`
 
@@ -77,7 +77,7 @@ Static editable assets:
 - `public/Mokshith-HS-Resume-Placeholder.txt`
   Replace this with your final resume file or update the path in `src/data/portfolioData.js`
 - `public/og-cover.png`
-  Open Graph placeholder image used for social previews
+  Open Graph image used for social previews
 - `public/favicon.svg`
   Simple brand icon you can replace later
 
@@ -122,9 +122,9 @@ VITE_BASE_PATH="/your-repository-name/" npm run build
 
 ## Recommended Post-Launch Edits
 
-- Replace the resume placeholder with your actual resume PDF
+- Replace the resume slot file with your actual resume PDF
 - Add live project links or case study URLs inside `src/data/portfolioData.js`
-- Swap placeholder email, Instagram, and X/Twitter values with real details
+- Swap reserved email, Instagram, and X/Twitter entries with real details when ready
 - Update `public/og-cover.png` if you want a custom social preview later
 
 ## License

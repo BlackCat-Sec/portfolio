@@ -134,7 +134,7 @@ function Navbar({ links, activeSection, brand, resume }) {
               onClick={handleClose}
               className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/12 bg-white/5 px-4 py-3 text-sm font-medium text-white transition hover:border-cyan-300/50 hover:text-cyan-200"
             >
-              Download Resume Placeholder
+              Resume Download Slot
               <FileDown size={16} />
             </a>
           </motion.div>

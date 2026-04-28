@@ -1,4 +1,4 @@
-// Edit this file to update portfolio copy, links, project placeholders, and resume paths.
+// Edit this file to update portfolio copy, links, project cards, and resume paths.
 
 export const navigation = [
   { id: "home", label: "Home" },
@@ -22,6 +22,11 @@ export const portfolio = {
     "I am an AIML engineering student at Bahubali College of Engineering, focused on cybersecurity, AI/ML, Linux, networking, secure web development, and practical real-world projects. I enjoy building security tools, AI-based apps, and modern web platforms.",
   mission:
     "Cybersecurity-focused AIML student building secure, intelligent, and real-world digital solutions.",
+  availability: {
+    headline: "Open to internships, project collaboration, and security-focused opportunities.",
+    note: "Best current response path: LinkedIn or GitHub while direct email and a final resume PDF can be added later.",
+    badges: ["Internship ready", "GitHub-backed work", "Security-first builder"],
+  },
   profileHighlights: [
     {
       title: "Education",
@@ -49,10 +54,10 @@ export const portfolio = {
     },
   ],
   heroMetrics: [
-    { label: "Featured Builds", value: "04" },
+    { label: "Public Projects", value: "04" },
     { label: "Certifications", value: "05" },
-    { label: "Core Domains", value: "06+" },
-    { label: "Learning Mode", value: "24/7" },
+    { label: "Focus Tracks", value: "06+" },
+    { label: "Opportunity Status", value: "Open" },
   ],
   focusAreas: [
     { label: "AI/ML Security", value: 88, icon: "brain" },
@@ -133,16 +138,26 @@ export const featuredProjects = [
     title: "CipherShield Cyber Scanner",
     status: "Public",
     tone: "cyan",
+    category: "Security Scanner",
+    role: "Full-stack security build",
     summary:
-      "A cybersecurity scanner project built with HTML/CSS and FastAPI, focused on SSL/TLS checks and domain intelligence workflows for practical security analysis.",
+      "HTML/CSS + FastAPI cybersecurity scanner focused on SSL/TLS checks and domain intelligence workflows for practical security analysis.",
+    challenge:
+      "Create a security-focused experience that feels accessible to users while still exposing useful scanning workflows and infrastructure signals.",
+    outcome:
+      "Demonstrates secure product thinking across interface design, backend-driven checks, and recruiter-friendly public code visibility.",
     features: [
       "Combines frontend usability with backend security scanning workflows",
       "Built around domain intelligence and SSL/TLS inspection use cases",
       "Strong public showcase of security-focused web engineering",
     ],
     stack: ["FastAPI", "HTML", "CSS", "Cybersecurity"],
-    footer:
-      "Live public repository from your GitHub profile.",
+    proofPoints: [
+      { label: "Primary language", value: "Python" },
+      { label: "Delivery style", value: "Web app workflow" },
+      { label: "Focus", value: "SSL/TLS + domain intelligence" },
+    ],
+    footer: "Live public repository from your GitHub profile with direct recruiter access to code and README.",
     actions: [
       {
         label: "Open Repo",
@@ -158,16 +173,26 @@ export const featuredProjects = [
     title: "Agri-care",
     status: "Public",
     tone: "violet",
+    category: "AI-inspired product build",
+    role: "Student builder / product thinker",
     summary:
       "A smart agriculture project designed to help farmers move a step forward with practical support around modern agriculture and decision making.",
+    challenge:
+      "Translate practical farming support ideas into a simple digital product direction that reflects real-world usefulness rather than demo-only UI.",
+    outcome:
+      "Shows that your portfolio is not limited to cybersecurity alone and that you can apply AIML thinking to real user problems.",
     features: [
       "Public GitHub build aligned with your AIML and real-world problem solving focus",
       "Shows interest in agriculture support and practical digital impact",
       "A strong example of AI/ML-inspired student project direction",
     ],
-    stack: ["AI/ML", "Python", "Automation", "Agritech"],
-    footer:
-      "Live public repository from your GitHub profile.",
+    stack: ["AI/ML", "HTML", "Automation", "Agritech"],
+    proofPoints: [
+      { label: "Primary language", value: "HTML" },
+      { label: "Delivery style", value: "Problem-led concept" },
+      { label: "Focus", value: "Smart agriculture support" },
+    ],
+    footer: "Live public repository from your GitHub profile with a practical, socially useful product direction.",
     actions: [
       { label: "Open Repo", href: "https://github.com/BlackCat-Sec/Agri-care" },
       { label: "Read README", href: "https://github.com/BlackCat-Sec/Agri-care#readme" },
@@ -177,16 +202,26 @@ export const featuredProjects = [
     title: "Exploit Verifier",
     status: "Public",
     tone: "blue",
+    category: "Security CLI",
+    role: "Security automation builder",
     summary:
       "A safe CVE exposure verification CLI that uses Docker-isolated benign probes to validate security exposure without turning the workflow into unsafe exploitation.",
+    challenge:
+      "Design a verification workflow that keeps the focus on safe defensive validation rather than crossing into unsafe exploit behavior.",
+    outcome:
+      "A strong cybersecurity portfolio signal because it balances practical usefulness, safety boundaries, and automation thinking.",
     features: [
       "Security-oriented CLI built around controlled and safer verification",
       "Useful public project for showing defensive validation thinking",
       "Strong fit for cybersecurity portfolios and internship applications",
     ],
     stack: ["Python", "CLI", "Docker", "CVE Validation"],
-    footer:
-      "Live public repository from your GitHub profile.",
+    proofPoints: [
+      { label: "Primary language", value: "Python" },
+      { label: "Delivery style", value: "CLI + Docker isolation" },
+      { label: "Focus", value: "Safe CVE verification" },
+    ],
+    footer: "Live public repository from your GitHub profile with a clear defensive-security positioning.",
     actions: [
       { label: "Open Repo", href: "https://github.com/BlackCat-Sec/exploit-verifier" },
       {
@@ -199,16 +234,26 @@ export const featuredProjects = [
     title: "Safe Security Scanner",
     status: "Public",
     tone: "emerald",
+    category: "Supply-chain security tool",
+    role: "Security tooling builder",
     summary:
       "A production-ready Python CLI for scanning repositories, PyPI packages, and SBOMs for security risk across supply-chain-aware workflows.",
+    challenge:
+      "Cover multiple software supply-chain surfaces in a way that stays useful for developers reviewing package and repository risk.",
+    outcome:
+      "Adds a mature security-automation signal to the portfolio by showing awareness of modern software supply-chain concerns.",
     features: [
       "Focused on practical security risk review for code and package ecosystems",
       "Showcases Python tooling around software and supply-chain security",
       "Clear public example of useful security automation work",
     ],
     stack: ["Python", "CLI", "SBOM", "Supply Chain Security"],
-    footer:
-      "Live public repository from your GitHub profile.",
+    proofPoints: [
+      { label: "Primary language", value: "Python" },
+      { label: "Delivery style", value: "Production-ready CLI" },
+      { label: "Focus", value: "Repo, PyPI, and SBOM scanning" },
+    ],
+    footer: "Live public repository from your GitHub profile that strengthens your supply-chain security narrative.",
     actions: [
       { label: "Open Repo", href: "https://github.com/BlackCat-Sec/safe-security-scanner" },
       {
@@ -224,26 +269,31 @@ export const certifications = [
     title: "Google Foundation of Cybersecurity",
     issuer: "Google",
     detail: "Core security foundations and professional cybersecurity orientation.",
+    focus: "Foundational security concepts",
   },
   {
     title: "Google Play It Safe: Manage Security Risks",
     issuer: "Google",
     detail: "Risk management thinking and practical security awareness.",
+    focus: "Risk management",
   },
   {
     title: "Google Tools of the Trade: Linux and SQL",
     issuer: "Google",
     detail: "Linux and SQL fundamentals for technical security workflows.",
+    focus: "Linux and SQL",
   },
   {
     title: "Google Connect and Protect: Networks and Network Security",
     issuer: "Google",
     detail: "Networking concepts and protection strategies for modern systems.",
+    focus: "Networking and defense",
   },
   {
     title: "Cisco Introduction to Cybersecurity",
     issuer: "Cisco",
     detail: "Foundational cybersecurity learning with industry-recognized framing.",
+    focus: "Industry fundamentals",
   },
 ];
 
@@ -252,16 +302,19 @@ export const achievements = [
     title: "Hackathon Participation",
     detail: "Hands-on hackathon participation with project-building experience under real time constraints.",
     icon: "trophy",
+    signal: "Builds under pressure",
   },
   {
     title: "Dyashin / DSEdify Opportunity",
     detail: "Selected for an employment opportunity through the Dyashin / DSEdify collaboration.",
     icon: "briefcase",
+    signal: "Professional selection signal",
   },
   {
     title: "Continuous Security Learning",
     detail: "Active learner in cybersecurity, Linux, networking, and AI with a practical builder mindset.",
     icon: "spark",
+    signal: "Consistent growth mindset",
   },
 ];
 
@@ -269,49 +322,55 @@ export const socialCards = [
   {
     label: "GitHub",
     value: "github.com/BlackCat-Sec",
-    detail: "Code, experiments, and portfolio publishing",
+    detail: "Best place to review live code, public projects, and technical progress.",
     href: "https://github.com/BlackCat-Sec",
     icon: "github",
     active: true,
+    stateLabel: "Live",
   },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/mokshith-hs",
-    detail: "Professional profile, networking, and opportunities",
+    detail: "Best current channel for professional outreach, internships, and collaboration conversations.",
     href: "https://www.linkedin.com/in/mokshith-hs",
     icon: "linkedin",
     active: true,
+    stateLabel: "Preferred",
   },
   {
     label: "Instagram",
-    value: "@add-handle-later",
-    detail: "Placeholder card for personal or creator updates",
+    value: "Add when ready",
+    detail: "Reserved for optional public updates or creator-facing content if you decide to share it later.",
     href: null,
     icon: "instagram",
     active: false,
+    stateLabel: "Reserved",
   },
   {
     label: "X / Twitter",
-    value: "@add-handle-later",
-    detail: "Placeholder card for quick thoughts and public updates",
+    value: "Add when ready",
+    detail: "Reserved for optional quick updates, public notes, or security-learning threads.",
     href: null,
     icon: "twitter",
     active: false,
+    stateLabel: "Reserved",
   },
   {
     label: "Email",
-    value: "add-your-email@example.com",
-    detail: "Placeholder contact point for direct inquiries",
+    value: "Direct inbox can be added later",
+    detail: "Kept private for now. LinkedIn remains the best current contact route for opportunities.",
     href: null,
     icon: "mail",
     active: false,
+    stateLabel: "Private",
   },
   {
     label: "Resume",
-    value: "Download placeholder file",
-    detail: "Replace the included placeholder with your final resume PDF",
+    value: "Resume download slot ready",
+    detail: "Replace the included file with your final PDF to activate a polished recruiter-ready download.",
     href: "resume",
     icon: "resume",
     active: true,
+    stateLabel: "Ready",
   },
 ];

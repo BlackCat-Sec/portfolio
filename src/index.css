@@ -231,6 +231,48 @@ h4,
   box-shadow: 0 32px 90px rgba(3, 10, 24, 0.46);
 }
 
+.project-signal-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(103, 232, 249, 0.12);
+  background:
+    radial-gradient(circle at 78% 22%, rgba(96, 165, 250, 0.16), transparent 24%),
+    radial-gradient(circle at 18% 70%, rgba(56, 189, 248, 0.12), transparent 20%),
+    linear-gradient(180deg, rgba(7, 15, 30, 0.92), rgba(5, 10, 22, 0.98));
+}
+
+.project-signal-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(94, 180, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 180, 255, 0.08) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: 0.3;
+  mask-image: radial-gradient(circle at center, black 34%, transparent 88%);
+}
+
+.project-signal-core {
+  position: absolute;
+  bottom: -2rem;
+  right: -1.6rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 999px;
+  border: 1px solid rgba(103, 232, 249, 0.16);
+  background:
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.16), transparent 16%),
+    radial-gradient(circle at center, rgba(56, 189, 248, 0.18), rgba(37, 99, 235, 0.05) 48%, transparent 74%);
+  box-shadow:
+    0 0 48px rgba(56, 189, 248, 0.16),
+    inset 0 0 28px rgba(255, 255, 255, 0.04);
+  transition: transform 260ms ease;
+}
+
+.project-card:hover .project-signal-core {
+  transform: scale(1.08);
+}
+
 .cyber-orb {
   position: relative;
   aspect-ratio: 1;

@@ -28,8 +28,8 @@ function SocialSection() {
       <Reveal>
         <SectionHeading
           eyebrow="GitHub & Social"
-          title="A clean network section for profile trust, discoverability, and future links."
-          description="GitHub and LinkedIn are live today, while Instagram, X, email, and resume are structured as placeholders so you can update them later without redesigning the page."
+          title="Professional links that help recruiters validate work, profile fit, and future contact routes."
+          description="GitHub and LinkedIn are the active channels today. The remaining cards are intentionally structured as reserved spaces so you can add more public contact points later without redesigning the section."
         />
       </Reveal>
 
@@ -54,7 +54,7 @@ function SocialSection() {
                       <Icon size={20} />
                     </span>
                     <span className="status-pill">
-                      Live
+                      {card.stateLabel}
                       <ArrowUpRight size={14} />
                     </span>
                   </div>
@@ -69,7 +69,7 @@ function SocialSection() {
                       <Icon size={20} />
                     </span>
                     <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-slate-400">
-                      Placeholder
+                      {card.stateLabel}
                     </span>
                   </div>
                   <h3 className="mt-5 font-display text-2xl font-semibold text-white">{card.label}</h3>

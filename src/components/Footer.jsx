@@ -11,7 +11,7 @@ function Footer() {
           </span>
           <div>
             <p className="font-display text-base font-semibold text-white">{portfolio.brand}</p>
-            <p className="text-xs text-slate-400">Cybersecurity, AI/ML, secure web apps, Linux, networking, automation.</p>
+            <p className="text-xs text-slate-400">Cybersecurity, AI/ML, secure web apps, Linux, networking, and automation with recruiter-ready presentation.</p>
           </div>
         </div>
 

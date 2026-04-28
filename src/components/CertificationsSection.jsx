@@ -10,7 +10,7 @@ function CertificationsSection() {
         <SectionHeading
           eyebrow="Certifications"
           title="Industry-backed learning milestones that reinforce the security foundation."
-          description="The certification section is designed to look polished in applications while staying easy to expand with certificate links, dates, or credential IDs later."
+          description="These certifications strengthen the portfolio with recognizable training across cybersecurity foundations, Linux, SQL, and networking. Provider share links or credential IDs can be attached later without redesigning the section."
         />
       </Reveal>
 
@@ -27,6 +27,9 @@ function CertificationsSection() {
                     <p className="mono text-xs uppercase tracking-[0.28em] text-slate-400">{certificate.issuer}</p>
                     <h3 className="mt-2 font-display text-xl font-semibold text-white">{certificate.title}</h3>
                     <p className="mt-3 text-sm leading-7 text-slate-300">{certificate.detail}</p>
+                    <span className="mt-4 inline-flex rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-cyan-200">
+                      {certificate.focus}
+                    </span>
                   </div>
                 </div>
 

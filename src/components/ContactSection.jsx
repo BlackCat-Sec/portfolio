@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BriefcaseBusiness, FolderGit2, MapPin, SendHorizonal } from "lucide-react";
+import { BriefcaseBusiness, FolderGit2, MapPin, SendHorizonal, ShieldCheck, Sparkles } from "lucide-react";
 import { portfolio } from "../data/portfolioData";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
@@ -20,15 +20,34 @@ function ContactSection() {
           <SectionHeading
             eyebrow="Contact"
             title="Open to internships, collaborations, and security-focused opportunities."
-            description="This form is intentionally UI-only for GitHub Pages. It gives you a professional contact surface now, and you can later connect it to Formspree, Netlify Forms, or your own backend."
+            description="LinkedIn and GitHub are the best live contact paths today. The form remains UI-only for GitHub Pages, but the layout is ready for Formspree, Netlify Forms, or a custom backend whenever you decide to connect it."
           />
 
           <div className="mt-8 space-y-4">
             <div className="glass-card rounded-[24px] p-5">
-              <p className="mono text-xs uppercase tracking-[0.28em] text-cyan-300/80">Base location</p>
-              <div className="mt-3 flex items-center gap-3 text-slate-300">
-                <MapPin size={18} className="text-cyan-300" />
-                <span>{portfolio.location}</span>
+              <p className="mono text-xs uppercase tracking-[0.28em] text-cyan-300/80">Professional snapshot</p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+                  <div className="flex items-center gap-2 text-cyan-300">
+                    <MapPin size={16} />
+                    <span className="mono text-[11px] uppercase tracking-[0.18em] text-slate-400">Location</span>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-slate-200">{portfolio.location}</p>
+                </div>
+                <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+                  <div className="flex items-center gap-2 text-cyan-300">
+                    <ShieldCheck size={16} />
+                    <span className="mono text-[11px] uppercase tracking-[0.18em] text-slate-400">Focus</span>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-slate-200">Cybersecurity, AIML, Linux, networking, and secure apps.</p>
+                </div>
+                <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-4">
+                  <div className="flex items-center gap-2 text-cyan-300">
+                    <Sparkles size={16} />
+                    <span className="mono text-[11px] uppercase tracking-[0.18em] text-slate-400">Status</span>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-slate-200">Open to internships and collaboration-focused conversations.</p>
+                </div>
               </div>
             </div>
 
@@ -40,7 +59,7 @@ function ContactSection() {
                 className="button-primary"
               >
                 <BriefcaseBusiness size={18} />
-                Contact on LinkedIn
+                Start on LinkedIn
               </a>
               <a
                 href={portfolio.socialLinks.github}
@@ -49,7 +68,7 @@ function ContactSection() {
                 className="button-secondary"
               >
                 <FolderGit2 size={18} />
-                View GitHub
+                Review GitHub Work
               </a>
             </div>
           </div>
@@ -85,14 +104,14 @@ function ContactSection() {
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <button type="submit" className="button-primary">
                 <SendHorizonal size={18} />
-                Submit UI Preview
+                Send Inquiry
               </button>
-              <span className="text-sm text-slate-400">No backend connected yet.</span>
+              <span className="text-sm text-slate-400">Demo form on static hosting.</span>
             </div>
 
             {submitted ? (
               <p className="mt-4 rounded-2xl border border-emerald-400/20 bg-emerald-400/10 px-4 py-3 text-sm text-emerald-200">
-                Form preview submitted. Connect this UI to a form service whenever you are ready.
+                Demo submission received. Connect this form to a service whenever you are ready to make it live.
               </p>
             ) : null}
           </form>

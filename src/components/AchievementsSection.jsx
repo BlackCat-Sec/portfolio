@@ -27,9 +27,14 @@ function AchievementsSection() {
           return (
             <Reveal key={achievement.title} delay={0.06 * index}>
               <article className="glass-card rounded-[28px] p-6">
-                <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-cyan-300">
-                  <Icon size={22} />
-                </span>
+                <div className="flex items-start justify-between gap-4">
+                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-cyan-300">
+                    <Icon size={22} />
+                  </span>
+                  <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-slate-300">
+                    {achievement.signal}
+                  </span>
+                </div>
                 <h3 className="mt-5 font-display text-2xl font-semibold text-white">{achievement.title}</h3>
                 <p className="mt-4 text-sm leading-7 text-slate-300">{achievement.detail}</p>
               </article>

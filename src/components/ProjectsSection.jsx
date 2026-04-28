@@ -22,8 +22,8 @@ function ProjectsSection() {
       <Reveal>
         <SectionHeading
           eyebrow="Featured Projects"
-          title="Public GitHub projects that visitors can open directly from the portfolio."
-          description="These featured cards now point to your real public GitHub repositories, so recruiters and collaborators can jump straight into the code, README, and project details from your portfolio."
+          title="Selected public builds with direct code access, clear use cases, and stronger portfolio proof."
+          description="Each featured card is designed like a compact case study: what the project is, why it matters, and how a recruiter can jump directly into the repository or README for validation."
         />
       </Reveal>
 
@@ -45,29 +45,79 @@ function ProjectsSection() {
                     </span>
                   </div>
 
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-cyan-300">
-                        <Icon size={20} />
-                      </span>
-                      <div>
-                        <p className="mono text-xs uppercase tracking-[0.28em] text-slate-400">Mokshith H S Build</p>
-                        <h3 className="mt-2 font-display text-2xl font-semibold text-white">{project.title}</h3>
+                  <div className="grid gap-6 lg:grid-cols-[1.08fr_0.92fr]">
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-cyan-300">
+                          <Icon size={20} />
+                        </span>
+                        <div>
+                          <p className="mono text-xs uppercase tracking-[0.28em] text-slate-400">{project.category}</p>
+                          <h3 className="mt-2 font-display text-2xl font-semibold text-white">{project.title}</h3>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2">
+                        <span className="glow-pill text-xs">{project.role}</span>
+                        {project.stack.slice(0, 2).map((item) => (
+                          <span key={`${project.title}-${item}`} className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-slate-300">
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+
+                      <p className="text-sm leading-7 text-slate-300 sm:text-base">{project.summary}</p>
+
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        <div className="rounded-[24px] border border-white/8 bg-slate-950/40 p-4">
+                          <p className="mono text-[11px] uppercase tracking-[0.24em] text-slate-400">Challenge</p>
+                          <p className="mt-3 text-sm leading-7 text-slate-300">{project.challenge}</p>
+                        </div>
+                        <div className="rounded-[24px] border border-white/8 bg-slate-950/40 p-4">
+                          <p className="mono text-[11px] uppercase tracking-[0.24em] text-slate-400">Outcome</p>
+                          <p className="mt-3 text-sm leading-7 text-slate-300">{project.outcome}</p>
+                        </div>
                       </div>
                     </div>
 
-                    <p className="text-sm leading-7 text-slate-300 sm:text-base">{project.summary}</p>
-                  </div>
+                    <div className="space-y-4">
+                      <div className="project-signal-panel rounded-[26px] p-5">
+                        <div className="project-signal-grid" />
+                        <div className="project-signal-core" />
+                        <div className="relative flex items-center justify-between gap-4">
+                          <div>
+                            <p className="mono text-[11px] uppercase tracking-[0.28em] text-cyan-300/80">Portfolio proof</p>
+                            <h4 className="mt-2 font-display text-xl font-semibold text-white">{project.category}</h4>
+                          </div>
+                          <div className="rounded-full border border-white/10 bg-slate-950/55 px-3 py-1 text-xs text-slate-300">
+                            {project.status}
+                          </div>
+                        </div>
 
-                  <div className="mt-6 grid gap-3">
-                    {project.features.map((feature) => (
-                      <div
-                        key={feature}
-                        className="rounded-2xl border border-white/8 bg-slate-950/40 px-4 py-3 text-sm leading-6 text-slate-300"
-                      >
-                        {feature}
+                        <div className="relative mt-5 grid gap-3">
+                          {project.proofPoints.map((point) => (
+                            <div
+                              key={`${project.title}-${point.label}`}
+                              className="rounded-2xl border border-white/8 bg-slate-950/55 px-4 py-3"
+                            >
+                              <p className="mono text-[11px] uppercase tracking-[0.2em] text-slate-500">{point.label}</p>
+                              <p className="mt-2 text-sm text-slate-200">{point.value}</p>
+                            </div>
+                          ))}
+                        </div>
                       </div>
-                    ))}
+
+                      <div className="grid gap-3">
+                        {project.features.map((feature) => (
+                          <div
+                            key={feature}
+                            className="rounded-2xl border border-white/8 bg-slate-950/40 px-4 py-3 text-sm leading-6 text-slate-300"
+                          >
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2">

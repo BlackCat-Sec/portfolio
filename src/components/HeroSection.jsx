@@ -72,6 +72,24 @@ function HeroSection() {
                 GitHub
               </a>
             </div>
+
+            <div className="glass-card max-w-3xl rounded-[24px] p-4 sm:p-5">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                <div className="space-y-2">
+                  <p className="mono text-xs uppercase tracking-[0.3em] text-cyan-300/80">Availability</p>
+                  <p className="text-sm leading-7 text-white sm:text-base">{portfolio.availability.headline}</p>
+                  <p className="text-sm leading-7 text-slate-400">{portfolio.availability.note}</p>
+                </div>
+
+                <div className="flex flex-wrap gap-2 sm:max-w-xs sm:justify-end">
+                  {portfolio.availability.badges.map((badge) => (
+                    <span key={badge} className="glow-pill text-xs">
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">

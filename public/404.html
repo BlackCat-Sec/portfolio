@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Mokshith H S Portfolio</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        color: #f8fbff;
+        background:
+          radial-gradient(circle at top right, rgba(77, 149, 255, 0.2), transparent 24%),
+          radial-gradient(circle at bottom left, rgba(129, 95, 255, 0.16), transparent 22%),
+          linear-gradient(180deg, #040713 0%, #03050f 100%);
+        overflow: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(48, 74, 122, 0.16) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(48, 74, 122, 0.14) 1px, transparent 1px);
+        background-size: 74px 74px;
+        opacity: 0.45;
+        mask-image: radial-gradient(circle at center, black 42%, transparent 92%);
+        pointer-events: none;
+      }
+
+      main {
+        position: relative;
+        max-width: 720px;
+        width: 100%;
+        border-radius: 32px;
+        border: 1px solid rgba(144, 166, 255, 0.18);
+        background: linear-gradient(180deg, rgba(12, 17, 32, 0.9), rgba(7, 11, 24, 0.96));
+        box-shadow: 0 30px 100px rgba(2, 7, 18, 0.65);
+        backdrop-filter: blur(24px);
+        padding: 40px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 999px;
+        border: 1px solid rgba(103, 232, 249, 0.2);
+        background: rgba(56, 189, 248, 0.08);
+        padding: 10px 14px;
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #a5f3fc;
+      }
+
+      h1 {
+        margin: 20px 0 12px;
+        font-size: clamp(2.75rem, 8vw, 4.5rem);
+        line-height: 0.95;
+      }
+
+      p {
+        margin: 0;
+        color: #adc0d8;
+        line-height: 1.8;
+      }
+
+      .actions {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 999px;
+        padding: 14px 18px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 180ms ease, border-color 180ms ease;
+      }
+
+      .primary {
+        border: 1px solid rgba(103, 232, 249, 0.3);
+        background: linear-gradient(135deg, rgba(40, 126, 255, 0.94), rgba(96, 71, 255, 0.92));
+        color: white;
+      }
+
+      .secondary {
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        color: #f8fbff;
+      }
+
+      a:hover {
+        transform: translateY(-1px);
+      }
+
+      .terminal {
+        margin-top: 28px;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(5, 9, 18, 0.78);
+        padding: 18px;
+        font-family: Consolas, "Courier New", monospace;
+        color: #a4f6b4;
+      }
+
+      .muted {
+        color: #91a4bc;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="eyebrow">Mokshith H S 404</div>
+      <h1>Signal lost.</h1>
+      <p>
+        The page you were trying to reach is not available right now. Head back to the portfolio
+        homepage or jump straight to Mokshith H S on GitHub or LinkedIn.
+      </p>
+
+      <div class="terminal">
+        &gt; locate profile<br />
+        <span class="muted">Result: route not found, returning to safe entry point.</span>
+      </div>
+
+      <div class="actions">
+        <a class="primary" href="./">Back to Portfolio</a>
+        <a class="secondary" href="https://github.com/BlackCat-Sec" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="secondary" href="https://www.linkedin.com/in/mokshith-hs" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </main>
+  </body>
+</html>

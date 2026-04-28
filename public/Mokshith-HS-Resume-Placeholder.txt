@@ -1,0 +1,8 @@
+Replace this placeholder with your final resume file before sharing the portfolio publicly.
+
+Suggested options:
+- Keep the same filename and replace this file with your actual resume PDF.
+- Or update the resume path inside src/data/portfolioData.js.
+
+Recommended final filename:
+Mokshith-HS-Resume.pdf

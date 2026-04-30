@@ -1,5 +1,15 @@
 import { useState } from "react";
-import { BriefcaseBusiness, FolderGit2, MapPin, SendHorizonal, ShieldCheck, Sparkles } from "lucide-react";
+import {
+  AtSign,
+  BriefcaseBusiness,
+  Camera,
+  FolderGit2,
+  MapPin,
+  MessageSquare,
+  SendHorizonal,
+  ShieldCheck,
+  Sparkles,
+} from "lucide-react";
 import { portfolio } from "../data/portfolioData";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
@@ -20,7 +30,7 @@ function ContactSection() {
           <SectionHeading
             eyebrow="Contact"
             title="Open to internships, collaborations, and security-focused opportunities."
-            description="LinkedIn and GitHub are the best live contact paths today. The form remains UI-only for GitHub Pages, but the layout is ready for Formspree, Netlify Forms, or a custom backend whenever you decide to connect it."
+            description="LinkedIn, GitHub, Instagram, Threads, and X are all live profile routes today. The form remains UI-only for GitHub Pages, but the layout is ready for Formspree, Netlify Forms, or a custom backend whenever you decide to connect it."
           />
 
           <div className="mt-8 space-y-4">
@@ -69,6 +79,33 @@ function ContactSection() {
               >
                 <FolderGit2 size={18} />
                 Review GitHub Work
+              </a>
+              <a
+                href={portfolio.socialLinks.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="button-secondary"
+              >
+                <Camera size={18} />
+                Instagram
+              </a>
+              <a
+                href={portfolio.socialLinks.threads}
+                target="_blank"
+                rel="noreferrer"
+                className="button-secondary"
+              >
+                <AtSign size={18} />
+                Threads
+              </a>
+              <a
+                href={portfolio.socialLinks.twitter}
+                target="_blank"
+                rel="noreferrer"
+                className="button-secondary"
+              >
+                <MessageSquare size={18} />
+                X
               </a>
             </div>
           </div>

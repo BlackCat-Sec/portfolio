@@ -1,5 +1,6 @@
 import {
   ArrowUpRight,
+  AtSign,
   BriefcaseBusiness,
   Camera,
   FileDown,
@@ -17,6 +18,7 @@ const icons = {
   linkedin: BriefcaseBusiness,
   mail: Mail,
   resume: FileDown,
+  threads: AtSign,
   twitter: MessageSquare,
 };
 
@@ -29,7 +31,7 @@ function SocialSection() {
         <SectionHeading
           eyebrow="GitHub & Social"
           title="Professional links that help recruiters validate work, profile fit, and future contact routes."
-          description="GitHub and LinkedIn are the active channels today. The remaining cards are intentionally structured as reserved spaces so you can add more public contact points later without redesigning the section."
+          description="GitHub, LinkedIn, Instagram, Threads, and X are now live profile routes. Email remains intentionally private until you share it, and the resume card stays ready for your final PDF."
         />
       </Reveal>
 

@@ -12,6 +12,8 @@ import StatusPanel from "./StatusPanel";
 import TerminalPanel from "./TerminalPanel";
 
 function HeroSection() {
+  const profileImageHref = `${import.meta.env.BASE_URL}${portfolio.profileImage.file}`;
+
   return (
     <section id="home" data-section className="section-shell px-5 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
       <div className="grid gap-8 xl:grid-cols-[1.28fr_0.9fr_0.92fr]">
@@ -36,11 +38,27 @@ function HeroSection() {
               <p className="max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">{portfolio.tagline}</p>
             </div>
 
-            <div className="glass-card max-w-xl rounded-[24px] p-4">
-              <div className="mono text-xs uppercase tracking-[0.32em] text-slate-400">&gt; whoami</div>
-              <div className="mt-3 flex items-center gap-3 text-sm text-slate-300 sm:text-base">
-                <ShieldCheck size={18} className="text-cyan-300" />
-                <span>Mokshith H S - Cybersecurity &amp; AI Learner</span>
+            <div className="glass-card max-w-2xl rounded-[24px] p-4 sm:p-5">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <div className="relative w-full max-w-[118px] overflow-hidden rounded-[22px] border border-cyan-300/15 bg-slate-950/60">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.18),_transparent_58%)]" />
+                  <img
+                    src={profileImageHref}
+                    alt={portfolio.profileImage.alt}
+                    className="relative aspect-square w-full object-cover"
+                  />
+                </div>
+                <div className="min-w-0">
+                  <div className="mono text-xs uppercase tracking-[0.32em] text-slate-400">&gt; whoami</div>
+                  <div className="mt-3 flex items-center gap-3 text-sm text-slate-300 sm:text-base">
+                    <ShieldCheck size={18} className="text-cyan-300" />
+                    <span>Mokshith H S - Cybersecurity &amp; AI Learner</span>
+                  </div>
+                  <p className="mt-3 text-sm leading-7 text-slate-400">
+                    Focused on cybersecurity, AI/ML, Linux, networking, and secure product
+                    building with a practical engineering mindset.
+                  </p>
+                </div>
               </div>
             </div>
 

@@ -16,6 +16,10 @@ export const portfolio = {
   name: "Mokshith H S",
   title: "AIML Student | Cybersecurity Enthusiast | AI Developer",
   tagline: "Building secure, intelligent, and real-world technology solutions.",
+  profileImage: {
+    file: "mokshith-profile.jpg",
+    alt: "Mokshith H S profile portrait",
+  },
   location: "Hassan, Karnataka, India",
   education: "AIML student at Bahubali College of Engineering, Shravanabelagola",
   about:
@@ -24,7 +28,7 @@ export const portfolio = {
     "Cybersecurity-focused AIML student building secure, intelligent, and real-world digital solutions.",
   availability: {
     headline: "Open to internships, project collaboration, and security-focused opportunities.",
-    note: "Best current response path: LinkedIn or GitHub while direct email and a final resume PDF can be added later.",
+    note: "Best current response path: LinkedIn, GitHub, Instagram, Threads, or X while direct email and a final resume PDF can be added later.",
     badges: ["Internship ready", "GitHub-backed work", "Security-first builder"],
   },
   profileHighlights: [
@@ -68,6 +72,9 @@ export const portfolio = {
   socialLinks: {
     github: "https://github.com/BlackCat-Sec",
     linkedin: "https://www.linkedin.com/in/mokshith-hs",
+    instagram: "https://www.instagram.com/46_appu?igsh=bWYzeWlvazljNTk5",
+    threads: "https://www.threads.com/@46_appu",
+    twitter: "https://x.com/HMokshith2722",
   },
   resume: {
     file: "Mokshith-HS-Resume-Placeholder.txt",
@@ -339,21 +346,30 @@ export const socialCards = [
   },
   {
     label: "Instagram",
-    value: "Add when ready",
-    detail: "Reserved for optional public updates or creator-facing content if you decide to share it later.",
-    href: null,
+    value: "instagram.com/46_appu",
+    detail: "Public social profile for personal updates, creator-style presence, and an additional route to verify your identity online.",
+    href: "https://www.instagram.com/46_appu?igsh=bWYzeWlvazljNTk5",
     icon: "instagram",
-    active: false,
-    stateLabel: "Reserved",
+    active: true,
+    stateLabel: "Live",
   },
   {
-    label: "X / Twitter",
-    value: "Add when ready",
-    detail: "Reserved for optional quick updates, public notes, or security-learning threads.",
-    href: null,
+    label: "Threads",
+    value: "threads.com/@46_appu",
+    detail: "Public Threads profile that adds another lightweight channel for social visibility and future public updates.",
+    href: "https://www.threads.com/@46_appu",
+    icon: "threads",
+    active: true,
+    stateLabel: "Live",
+  },
+  {
+    label: "X",
+    value: "x.com/HMokshith2722",
+    detail: "Public X profile for short updates, public notes, and broader social discoverability around your work.",
+    href: "https://x.com/HMokshith2722",
     icon: "twitter",
-    active: false,
-    stateLabel: "Reserved",
+    active: true,
+    stateLabel: "Live",
   },
   {
     label: "Email",

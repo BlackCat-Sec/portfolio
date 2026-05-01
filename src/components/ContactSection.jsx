@@ -3,7 +3,9 @@ import {
   AtSign,
   BriefcaseBusiness,
   Camera,
+  FileDown,
   FolderGit2,
+  Mail,
   MapPin,
   MessageSquare,
   SendHorizonal,
@@ -16,6 +18,7 @@ import SectionHeading from "./SectionHeading";
 
 function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const resumeHref = `${import.meta.env.BASE_URL}${portfolio.resume.file}`;
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,7 +33,7 @@ function ContactSection() {
           <SectionHeading
             eyebrow="Contact"
             title="Open to internships, collaborations, and security-focused opportunities."
-            description="LinkedIn, GitHub, Instagram, Threads, and X are all live profile routes today. The form remains UI-only for GitHub Pages, but the layout is ready for Formspree, Netlify Forms, or a custom backend whenever you decide to connect it."
+            description="Email, LinkedIn, GitHub, and the live resume PDF are the strongest recruiter-facing routes today. The form remains UI-only for GitHub Pages, but the layout is ready for Formspree, Netlify Forms, or a custom backend whenever you decide to connect it."
           />
 
           <div className="mt-8 space-y-4">
@@ -62,11 +65,19 @@ function ContactSection() {
             </div>
 
             <div className="flex flex-wrap gap-3">
+              <a href={portfolio.socialLinks.email} className="button-primary">
+                <Mail size={18} />
+                Email Me
+              </a>
+              <a href={resumeHref} download={portfolio.resume.downloadName} className="button-secondary">
+                <FileDown size={18} />
+                Download Resume
+              </a>
               <a
                 href={portfolio.socialLinks.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="button-primary"
+                className="button-secondary"
               >
                 <BriefcaseBusiness size={18} />
                 Start on LinkedIn

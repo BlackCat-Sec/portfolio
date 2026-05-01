@@ -31,7 +31,7 @@ function SocialSection() {
         <SectionHeading
           eyebrow="GitHub & Social"
           title="Professional links that help recruiters validate work, profile fit, and future contact routes."
-          description="GitHub, LinkedIn, Instagram, Threads, and X are now live profile routes. Email remains intentionally private until you share it, and the resume card stays ready for your final PDF."
+          description="Email, LinkedIn, GitHub, and the live resume download now form the primary recruiter-facing contact stack. Instagram, Threads, and X remain available as supporting profile routes."
         />
       </Reveal>
 

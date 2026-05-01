@@ -21,21 +21,21 @@ export const portfolio = {
     alt: "Mokshith H S profile portrait",
   },
   location: "Hassan, Karnataka, India",
-  education: "AIML student at Bahubali College of Engineering, Shravanabelagola",
+  education: "B.E. in Artificial Intelligence and Machine Learning, Bahubali College of Engineering, expected July 2027",
   about:
     "I am an AIML engineering student at Bahubali College of Engineering, focused on cybersecurity, AI/ML, Linux, networking, secure web development, and practical real-world projects. I enjoy building security tools, AI-based apps, and modern web platforms.",
   mission:
     "Cybersecurity-focused AIML student building secure, intelligent, and real-world digital solutions.",
   availability: {
     headline: "Open to internships, project collaboration, and security-focused opportunities.",
-    note: "Best current response path: LinkedIn, GitHub, Instagram, Threads, or X while direct email and a final resume PDF can be added later.",
-    badges: ["Internship ready", "GitHub-backed work", "Security-first builder"],
+    note: "Best current response path: email, LinkedIn, GitHub, and the live resume download, with additional social channels available when useful.",
+    badges: ["July 2027 grad", "8.3 CGPI", "Security-first builder"],
   },
   profileHighlights: [
     {
       title: "Education",
-      value: "Bahubali College of Engineering",
-      detail: "AIML engineering track with real-world project focus.",
+      value: "B.E. AIML | July 2027",
+      detail: "Bahubali College of Engineering with an 8.3 CGPI and real-world project focus.",
       icon: "graduation",
     },
     {
@@ -46,14 +46,14 @@ export const portfolio = {
     },
     {
       title: "Professional Identity",
-      value: "Mokshith H S",
-      detail: "Presented with a cybersecurity-first visual identity and practical engineering depth.",
+      value: "Cybersecurity internship candidate",
+      detail: "Targeting SOC, blue-team, and secure software roles with practical engineering depth.",
       icon: "shield",
     },
     {
       title: "Current Mode",
-      value: "Learning, building, securing",
-      detail: "Focused on AI automation, Linux, networking, and secure apps.",
+      value: "Open to internship / fresher roles",
+      detail: "Available for remote, onsite, and hybrid opportunities across cybersecurity and secure development.",
       icon: "spark",
     },
   ],
@@ -70,6 +70,7 @@ export const portfolio = {
     { label: "Automation", value: 80, icon: "bot" },
   ],
   socialLinks: {
+    email: "mailto:gowdas573201@gmail.com",
     github: "https://github.com/BlackCat-Sec",
     linkedin: "https://www.linkedin.com/in/mokshith-hs",
     instagram: "https://www.instagram.com/46_appu?igsh=bWYzeWlvazljNTk5",
@@ -77,8 +78,8 @@ export const portfolio = {
     twitter: "https://x.com/HMokshith2722",
   },
   resume: {
-    file: "Mokshith-HS-Resume-Placeholder.txt",
-    downloadName: "Mokshith-HS-Resume-Placeholder.txt",
+    file: "Mokshith-HS-Resume.pdf",
+    downloadName: "Mokshith-HS-Resume.pdf",
   },
 };
 
@@ -345,6 +346,24 @@ export const socialCards = [
     stateLabel: "Preferred",
   },
   {
+    label: "Email",
+    value: "gowdas573201@gmail.com",
+    detail: "Primary direct contact for internship, hiring, and collaboration conversations.",
+    href: "mailto:gowdas573201@gmail.com",
+    icon: "mail",
+    active: true,
+    stateLabel: "Live",
+  },
+  {
+    label: "Resume",
+    value: "Recruiter-ready PDF",
+    detail: "A clean ATS-friendly PDF resume designed for internship and entry-level opportunities in security and software roles.",
+    href: "resume",
+    icon: "resume",
+    active: true,
+    stateLabel: "Live",
+  },
+  {
     label: "Instagram",
     value: "instagram.com/46_appu",
     detail: "Public social profile for personal updates, creator-style presence, and an additional route to verify your identity online.",
@@ -370,23 +389,5 @@ export const socialCards = [
     icon: "twitter",
     active: true,
     stateLabel: "Live",
-  },
-  {
-    label: "Email",
-    value: "Direct inbox can be added later",
-    detail: "Kept private for now. LinkedIn remains the best current contact route for opportunities.",
-    href: null,
-    icon: "mail",
-    active: false,
-    stateLabel: "Private",
-  },
-  {
-    label: "Resume",
-    value: "Resume download slot ready",
-    detail: "Replace the included file with your final PDF to activate a polished recruiter-ready download.",
-    href: "resume",
-    icon: "resume",
-    active: true,
-    stateLabel: "Ready",
   },
 ];

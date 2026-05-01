@@ -38,7 +38,7 @@ function AboutSection() {
             className="button-secondary mt-8 inline-flex"
           >
             <FileDown size={18} />
-            Resume Download Slot
+            Download Resume
           </a>
         </Reveal>
 

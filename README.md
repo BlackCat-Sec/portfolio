@@ -8,7 +8,7 @@ Premium cybersecurity + AI/ML personal portfolio built with React, Vite, Tailwin
 - Responsive layout for mobile, tablet, and desktop
 - Reusable React components with content driven from `src/data/portfolioData.js`
 - Featured project cards that support `Private`, `In Progress`, and `Public` states without broken links
-- SEO meta tags, Open Graph social preview image, custom 404 page, and a ready-to-replace resume download slot
+- SEO meta tags, Open Graph social preview image, custom 404 page, and a live ATS-friendly resume download
 - GitHub Actions workflow for automatic GitHub Pages deployment
 
 ## Stack
@@ -74,12 +74,18 @@ Update these areas first:
 
 Static editable assets:
 
-- `public/Mokshith-HS-Resume-Placeholder.txt`
-  Replace this with your final resume file or update the path in `src/data/portfolioData.js`
+- `public/Mokshith-HS-Resume.pdf`
+  Recruiter-facing resume download currently used by the site
+- `public/Mokshith-HS-Resume.docx`
+  Editable DOCX version of the resume
+- `public/Mokshith-HS-Resume.html`
+  Print-friendly HTML source used to generate the PDF
 - `public/og-cover.png`
   Open Graph image used for social previews
 - `public/favicon.svg`
   Simple brand icon you can replace later
+- `scripts/generate_resume.py`
+  Resume source generator for the editable DOCX build
 
 ## GitHub Pages Deployment
 
@@ -122,9 +128,9 @@ VITE_BASE_PATH="/your-repository-name/" npm run build
 
 ## Recommended Post-Launch Edits
 
-- Replace the resume slot file with your actual resume PDF
+- Update the resume content in `public/Mokshith-HS-Resume.html` or `scripts/generate_resume.py` as your experience grows
 - Add live project links or case study URLs inside `src/data/portfolioData.js`
-- Swap reserved email, Instagram, and X/Twitter entries with real details when ready
+- Keep `src/data/portfolioData.js` in sync if your email, resume path, or social links change
 - Update `public/og-cover.png` if you want a custom social preview later
 
 ## License
